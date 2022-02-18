@@ -1,0 +1,10 @@
+apply from: "../lib.build.gradle"
+
+android {
+
+}
+
+dependencies {
+    api deps.moshi
+    kapt deps.moshi_kotlin_codegen
+}

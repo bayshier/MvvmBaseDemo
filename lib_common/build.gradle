@@ -1,0 +1,25 @@
+apply from: "../lib.build.gradle"
+
+android {
+
+}
+
+dependencies {
+
+    api project(":lib_base")
+    api project(":lib_log")
+    api project(":lib_net")
+    api project(":lib_image_picker")
+
+    api deps.rxpermissions
+    api deps.MultiImageSelector
+
+    api deps.glide
+    kapt deps.glide_compiler
+    api deps.glide_transformations
+
+    api deps.moshi
+    kapt deps.moshi_kotlin_codegen
+
+    debugApi deps.leakcanary_android
+}
