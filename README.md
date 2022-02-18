@@ -599,8 +599,6 @@ sourceSets {
 
 在每个组件的debug目录下创建一个Application并在module下的AndroidManifest.xml进行配置
 
-![](https://gitee.com/shandong_zhaotai_network_sd_zhaotai/ImageRepo/raw/master/2021/images/20210312211206.jpg)
-
 ### 集成开发模式下的Application
 
 排除掉 `debug/**` 下面的Application，使用 `moudle_app ` 壳子下面的 Application,其必须继承 `ModuleApplication`
@@ -628,10 +626,3 @@ class MyApp : ModuleApplication()
 - compileSdkVersion(编译版本)：30 (Adnroid 10.0)
 - buildToolsVersion(SDK 构建版本)：30.0.2
 
-### 感谢第三方开源
-
-- [YImagePicker](https://github.com/yangpeixing/YImagePicker)
-- [KLog](https://github.com/ZhaoKaiQiang/KLog)
-- [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
-- [BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-- [android-zanpakuto](https://github.com/alvince/android-zanpakuto)
